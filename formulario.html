@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link href="css\styleForm.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="C:\Users\Dell\Documents\estudos\web - novo\trabalho web\index.html">Voltar a Página inicial</a>
+        </div>
+    </nav>
+    
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mt-0">Entre em Contato</h2>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">Deixe-nos saber como podemos ajudar você!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6">
+                    <form id="contactForm" action="process_form.php" method="post">
+                        <!-- Nome -->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+                            <label for="nome">Seu Nome</label>
+                        </div>
+
+                        <!-- Telefone -->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="tel" name="telefone" id="telefone" placeholder="(61) 1234-5678" required>
+                            <label for="telefone">Seu Telefone</label>
+                        </div>
+
+                        <!-- Endereço -->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" name="endereco" id="endereco" placeholder="Seu Endereço" required>
+                            <label for="endereco">Seu Endereço</label>
+                        </div>
+
+                        <!-- Mensagem -->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Sua Mensagem" style="height: 10rem" required></textarea>
+                            <label for="mensagem">Sua Mensagem</label>
+                        </div>
+
+                        <!-- Botão de Envio -->
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-xl" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!--LOGO DO WHATSAPP -->
+        <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+<a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5561996201603&text=Entre%20em%20contato%20conosco%20atrav%C3%A9s%20do%20WhatsApp.">
+  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+</a>
+    </footer>
+
+</body>
+</html>
